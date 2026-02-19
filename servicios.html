@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Académicos | Andrea M.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <style>
+        /* Inline critical styles for service page structure before moving to style.css */
+        .services-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: var(--bg-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-hero h1 {
+            font-size: 5rem;
+            font-family: var(--font-heading);
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Header (Shared) -->
+    <header class="header">
+        <a href="index.html" class="logo">AM.</a>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="#about" class="nav-link">Mi Enfoque</a></li>
+                <li><a href="#experience" class="nav-link">Trayectoria</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Services Hero -->
+        <section class="services-hero">
+            <div class="hero-bg-wrapper" style="opacity: 0.1; width: 100%; clip-path: none;">
+                <!-- Decorative background pattern or image could go here -->
+            </div>
+            <div class="hero-content" style="width: 100%; padding: 0;">
+                <h1 class="hero-title reveal-text">Excelencia<br>Académica</h1>
+                <p class="hero-subtitle" style="margin: 0 auto; opacity: 1;">Soluciones educativas personalizadas para
+                    cada etapa de tu aprendizaje.</p>
+            </div>
+        </section>
+
+        <!-- Service Category 1: Preparation for Official Exams -->
+        <section class="service-category" id="exams">
+            <div class="category-intro">
+                <div class="category-image-wrapper">
+                    <img src="img/servicios/servicios_de_preparacion_para_examenes_oficiales_general.jpeg"
+                        alt="Preparación Exámenes" class="category-img">
+                </div>
+                <div class="category-info">
+                    <span class="category-number">01</span>
+                    <h2 class="category-title">Preparación para <br>Exámenes Oficiales</h2>
+                    <p class="category-desc">Estrategias probadas para alcanzar tu máximo puntaje en certificaciones
+                        internacionales.</p>
+                </div>
+            </div>
+
+            <div class="sub-services-scroll">
+                <!-- Sub 1 -->
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_de_preparacion_para_examenes_oficiales_SUB_examenes_de_cambridge.jpeg"
+                            alt="Cambridge">
+                    </div>
+                    <div class="card-content">
+                        <h3>Exámenes de Cambridge</h3>
+                        <p class="price">Desde ₡18,000 / hora</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('cambridge')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesa%20la%20preparación%20para%20Cambridge"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sub 2 -->
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_de_preparacion_para_examenes_oficiales_SUB_ielts.jpeg"
+                            alt="IELTS">
+                    </div>
+                    <div class="card-content">
+                        <h3>Preparación IELTS</h3>
+                        <p class="price">Desde ₡22,000 / hora</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('ielts')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesa%20la%20preparación%20para%20IELTS"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Service Category 2: Digital & Passive Services -->
+        <section class="service-category reverse" id="digital">
+            <div class="category-intro">
+                <div class="category-image-wrapper">
+                    <img src="img/servicios/servicios_digitales_y_pasivos_general.jpeg" alt="Servicios Digitales"
+                        class="category-img">
+                </div>
+                <div class="category-info">
+                    <span class="category-number">02</span>
+                    <h2 class="category-title">Servicios Digitales y<br>Contenido</h2>
+                    <p class="category-desc">Recursos educativos de alta calidad disponibles 24/7 para tu
+                        autoaprendizaje.</p>
+                </div>
+            </div>
+
+            <div class="sub-services-scroll">
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_digitales_y_pasivos_SUB_creacion_y_venta_de_material_didactico.jpeg"
+                            alt="Material Didáctico">
+                    </div>
+                    <div class="card-content">
+                        <h3>Material Didáctico</h3>
+                        <p class="price">Packs desde ₡8,000</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('material')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesa%20el%20material%20didáctico"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_digitales_y_pasivos_general_cursos_online_grabados.jpeg"
+                            alt="Cursos Grabados">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cursos Online Grabados</h3>
+                        <p class="price">Accesos desde ₡28,000</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('cursos')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesan%20los%20cursos%20grabados"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Service Category 3: Specialized Support -->
+        <section class="service-category" id="specialized">
+            <div class="category-intro">
+                <div class="category-image-wrapper">
+                    <img src="img/servicios/servicios_especializados_y_de_apoyo_general.jpeg" alt="Apoyo Especializado"
+                        class="category-img">
+                </div>
+                <div class="category-info">
+                    <span class="category-number">03</span>
+                    <h2 class="category-title">Servicios Especializados<br>y de Apoyo</h2>
+                    <p class="category-desc">Soluciones lingüísticas profesionales parra documentos y textos académicos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sub-services-scroll">
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_especializados_y_de_apoyo_general_SUB_traduccion_y_correccion_de_textos.jpeg"
+                            alt="Traducción">
+                    </div>
+                    <div class="card-content">
+                        <h3>Traducción y Corrección</h3>
+                        <p class="price">Desde ₡45 / palabra</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('traduccion')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20necesito%20cotizar%20una%20traducción"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Service Category 4: By Age/Type -->
+        <section class="service-category reverse" id="ages">
+            <div class="category-intro">
+                <div class="category-image-wrapper">
+                    <img src="img/servicios/servicios_por_edad_y_tipo_de_alumno_general.jpeg" alt="Por Edad"
+                        class="category-img">
+                </div>
+                <div class="category-info">
+                    <span class="category-number">04</span>
+                    <h2 class="category-title">Programas por<br>Perfil de Alumno</h2>
+                    <p class="category-desc">Metodologías pedagógicas adaptadas específicamente a cada etapa de
+                        desarrollo.</p>
+                </div>
+            </div>
+
+            <div class="sub-services-scroll">
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_por_edad_y_tipo_de_alumno_SUB_Niños_y_Adolesentes.jpeg"
+                            alt="Niños">
+                    </div>
+                    <div class="card-content">
+                        <h3>Niños y Adolescentes</h3>
+                        <p class="price">Mensualidad desde ₡45,000</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('kids')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesan%20las%20clases%20para%20niños"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_por_edad_y_tipo_de_alumno_adultos_general_SUB_y_profesional_general_y_profesional.jpeg"
+                            alt="Adultos">
+                    </div>
+                    <div class="card-content">
+                        <h3>Adultos y Profesionales</h3>
+                        <p class="price">Mensualidad desde ₡55,000</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('adults')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesan%20las%20clases%20para%20adultos"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_por_edad_y_tipo_de_alumno_SUB_ingles_para_fines_especificos.jpeg"
+                            alt="Fines Específicos">
+                    </div>
+                    <div class="card-content">
+                        <h3>Inglés Fines Específicos</h3>
+                        <p class="price">A medida</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('specific')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20necesito%20inglés%20para%20fines%20específicos"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Service Category 5: Modality -->
+        <section class="service-category" id="modality">
+            <div class="category-intro">
+                <div class="category-image-wrapper">
+                    <img src="img/servicios/servicios_por_modalidad_de_ensenñanza_general.jpeg" alt="Modalidad"
+                        class="category-img">
+                </div>
+                <div class="category-info">
+                    <span class="category-number">05</span>
+                    <h2 class="category-title">Modalidades de<br>Enseñanza</h2>
+                    <p class="category-desc">Flexibilidad total: presencial, online o híbrido, tú eliges cómo aprender.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sub-services-scroll">
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_por_modalidad_de_ensenñanza_SUB_clases_individuales.jpeg"
+                            alt="Individuales">
+                    </div>
+                    <div class="card-content">
+                        <h3>Clases Individuales</h3>
+                        <p class="price">₡16,000 / hora</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('individual')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesan%20las%20clases%20individuales"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_por_modalidad_de_ensenñanza_SUB_clases_individuales_SUB_clases_en_grupo.jpeg"
+                            alt="Grupales">
+                    </div>
+                    <div class="card-content">
+                        <h3>Clases en Grupo</h3>
+                        <p class="price">₡8,000 / hora</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('group')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesan%20las%20clases%20grupales"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="img/servicios/servicios_por_modalidad_de_ensenñanza_SUB_clases_online.jpeg"
+                            alt="Online">
+                    </div>
+                    <div class="card-content">
+                        <h3>Clases Online</h3>
+                        <p class="price">Desde ₡14,000 / hora</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openModal('online')">Detalles</button>
+                            <a href="https://wa.me/12345678?text=Hola,%20me%20interesan%20las%20clases%20online"
+                                class="btn-whatsapp" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.973.87 3.191.87h.005c3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm-9.031 5.766c0-4.978 4.053-9.031 9.031-9.031s9.031 4.053 9.031 9.031c0 4.978-4.053 9.031-9.031 9.031-2.028 0-3.878-.65-5.385-1.74l-4.646 1.219 1.239-4.529c-1.226-1.556-1.969-3.483-1.969-5.592z" />
+                                </svg>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Trajectory Section (New) -->
+        <section class="section experience" style="background-color: var(--text-color); color: var(--bg-color);">
+            <div class="container">
+                <h2 class="section-title" style="color: var(--bg-color);">Más que enseñar inglés,<br>construyo puentes.
+                </h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item left">
+                        <span class="timeline-year">2014</span>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Inicio de la Pasión</h3>
+                            <span class="timeline-company">Voluntariado Educativo</span>
+                            <p>Descubrí que el idioma es la herramienta más poderosa para la movilidad social. Comencé
+                                alfabetizando en comunidades rurales.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item right">
+                        <span class="timeline-year">2018</span>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Certificación Internacional</h3>
+                            <span class="timeline-company">Londres, UK</span>
+                            <p>Obtuve mi certificación CELTA, especializándome en la enseñanza de adultos y metodologías
+                                comunicativas modernas.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item left">
+                        <span class="timeline-year">2022</span>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Fundadora de AM.</h3>
+                            <span class="timeline-company">Costa Rica</span>
+                            <p>Lancé mi propia metodología "Immersion First", ayudando a más de 500 profesionales a
+                                romper sus barreras de habla en tiempo récord.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section (New) -->
+        <section class="section about">
+            <div class="container">
+                <h2 class="section-title">Pedagogía Adaptativa</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>No creo en los "talles únicos". Mi enfoque se basa en la <strong>Neuroeducación</strong>:
+                            entiendo cómo aprende tu cerebro para diseñar estrategias que maximicen la retención.</p>
+                        <p>Más allá de la gramática, trabajamos la <strong>Confianza Cultural</strong>. Te preparo no
+                            solo para hablar, sino para desenvolverte con seguridad en cualquier contexto global.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Tasa de Éxito</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Global</span>
+                            <span class="stat-label">Mindset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Reused) -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <h2 class="section-title">Hablemos</h2>
+                    <p>La primera clase de diagnóstico es gratuita.</p>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="¿Cuál es tu objetivo con el inglés?" rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal (Generic Structure) -->
+    <div id="service-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-body">
+                <h2 id="modal-title">Service Title</h2>
+                <div class="modal-grid">
+                    <img id="modal-image" src="" alt="Service Detail">
+                    <div class="modal-details">
+                        <p id="modal-description">Description goes here.</p>
+                        <ul id="modal-features">
+                            <!-- Features injected via JS -->
+                        </ul>
+                        <div class="modal-footer">
+                            <span class="price-tag" id="modal-price">$00</span>
+                            <a href="#" id="modal-cta" class="btn-primary" target="_blank">Agendar Clase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Andrea M. Todos los derechos reservados.</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;"><a href="privacidad.html"
+                style="color: inherit; text-decoration: underline;">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Floating Social Sidebar -->
+    <div class="floating-social-sidebar">
+        <a href="https://wa.me/50688888888" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                stroke="none">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+        </a>
+        <a href="tel:+50688888888" class="social-icon phone" title="Llamar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69633d7c987b03197cb20051/1jelqgcbd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- Developer Watermark -->
+    <a href="https://nextwebcr.com" target="_blank" class="developer-badge">
+        <div class="dev-logo-wrapper">
+            <img src="img/logo.png" alt="NextWeb CR Logo" class="dev-logo">
+        </div>
+        <span class="dev-text">Desarrollado por <strong>NextWeb CR</strong></span>
+    </a>
+
+    <script src="js/servicios.js"></script>
+    <script src="js/anti-inspect.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Martinez | English Teacher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">AM.</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="#about" class="nav-link">Filosofía</a></li>
+                <li><a href="#methods" class="nav-link">Destacados</a></li>
+                <li><a href="cv/Profesora_Andrea_Martinez_Ingles.pdf" class="nav-link" target="_blank">Curriculum</a>
+                </li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-bg-wrapper">
+                <img src="img/hero/profesora1.jpg" alt="" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">Teacher</span>
+                    <span class="reveal-text">Andrea</span>
+                    <span class="reveal-text">Martinez.</span>
+                </h1>
+                <p class="hero-subtitle">English for the modern professional. Based in Costa Rica 🇨🇷.</p>
+                <a href="#contact" class="btn-primary">Start Now</a>
+            </div>
+
+            <div class="hero-name-tag">
+                <span>Unlock Your Potential</span>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">Mi Enfoque</h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="img/mienfoque/profeenfoque.jpeg" alt="Andrea Martinez" class="about-img">
+                            <div class="img-backdrop"></div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>El idioma no es solo gramática, es <strong>conexión</strong>. Con más de 10 años de
+                            experiencia, diseño experiencias de aprendizaje que rompen la barrera del miedo y te llevan
+                            a la fluidez real.</p>
+                        <p>Mis clases son dinámicas, personalizadas y enfocadas en tus objetivos reales, ya sea cerrar
+                            un trato internacional o viajar por el mundo.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Alumnos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Personalizado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h2 class="section-title">Trayectoria</h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item left">
+                        <span class="timeline-year">2016</span>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Certified ESL Instructor</h3>
+                            <span class="timeline-company">Polyglot Institute</span>
+                            <p>Desarrollé la técnica 'Immersion First', ayudando a más de 200 estudiantes a romper sus
+                                barreras de habla en tiempo récord.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item right">
+                        <span class="timeline-year">2019</span>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Corporate Trainer</h3>
+                            <span class="timeline-company">TechGlobal Inc.</span>
+                            <p>Coach de idioma exclusivo para ejecutivos C-Level, preparándolos para rondas de inversión
+                                y conferencias internacionales.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item left">
+                        <span class="timeline-year">2024</span>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Founder</h3>
+                            <span class="timeline-company">The AM Method</span>
+                            <p>Lanzamiento de un ecosistema de coaching 100% digital y personalizado para profesionales
+                                remotos en más de 15 países.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="methods" class="section methods">
+            <div class="container">
+                <h2 class="section-title">Metodología</h2>
+                <p class="section-desc">Desliza para explorar los programas.</p>
+
+                <!-- 3D Card Carousel Implementation -->
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="card active">
+                            <div class="card-content">
+                                <h3>Business English</h3>
+                                <p>Domina el lenguaje corporativo. Presentaciones, negociaciones y correos efectivos.
+                                </p>
+                                <span class="card-number">01</span>
+                            </div>
+                        </div>
+                        <!-- Card 1: Exams -->
+                        <div class="card active" data-link="servicios.html#exams">
+                            <span class="card-number">01</span>
+                            <h3>Exámenes Oficiales</h3>
+                            <p>Cambridge & IELTS. Estrategias específicas para maximizar tu puntaje.</p>
+                        </div>
+                        <!-- Card 2: Digital -->
+                        <div class="card next" data-link="servicios.html#digital">
+                            <span class="card-number">02</span>
+                            <h3>Servicios Digitales</h3>
+                            <p>Recursos y cursos grabados para aprender a tu ritmo.</p>
+                        </div>
+                        <!-- Card 3: Specialized -->
+                        <div class="card" data-link="servicios.html#specialized">
+                            <span class="card-number">03</span>
+                            <h3>Servicios Especializados</h3>
+                            <p>Traducción de textos y corrección académica profesional.</p>
+                        </div>
+                        <!-- Card 4: Profiles -->
+                        <div class="card" data-link="servicios.html#ages">
+                            <span class="card-number">04</span>
+                            <h3>Perfiles de Alumno</h3>
+                            <p>Programas adaptados para Niños, Adultos y Fines Específicos.</p>
+                        </div>
+                        <!-- Card 5: Modality -->
+                        <div class="card prev" data-link="servicios.html#modality">
+                            <span class="card-number">05</span>
+                            <h3>Modalidades</h3>
+                            <p>Clases Online, Individuales o en Grupo.</p>
+                        </div>
+
+                        <div class="carousel-controls">
+                            <button class="control-btn prev-btn">&#8249;</button>
+                            <button class="control-btn next-btn">&#8250;</button>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic CTA Button -->
+                    <div class="methods-cta">
+                        <a href="servicios.html#exams" id="dynamic-service-btn" class="btn-primary btn-icon">
+                            Ver Servicio
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Reviews Section (Infinite Scroll) -->
+        <section id="reviews" class="section reviews">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 4rem;">Lo que dicen mis alumnos</h2>
+            <div class="reviews-container">
+                <div class="reviews-track">
+                    <!-- 10 Original Reviews -->
+                    <div class="review-card">
+                        <p class="review-text">"La preparación para el IELTS fue impecable. Logré el puntaje que
+                            necesitaba para mi maestría."</p>
+                        <div class="review-author">
+                            <span class="author-name">Sofía R.</span>
+                            <span class="author-service">IELTS Prep</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Romper la barrera del miedo al hablar fue clave. Ahora lidero reuniones
+                            en inglés sin dudar."</p>
+                        <div class="review-author">
+                            <span class="author-name">Carlos M.</span>
+                            <span class="author-service">Business English</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Material didáctico muy claro y directo. Las guías de gramática son mi
+                            referencia diaria."</p>
+                        <div class="review-author">
+                            <span class="author-name">Ana P.</span>
+                            <span class="author-service">Recursos</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Mis hijos adoran sus clases. Aprenden jugando y han mejorado muchísimo
+                            en el colegio."</p>
+                        <div class="review-author">
+                            <span class="author-name">Familia T.</span>
+                            <span class="author-service">Niños</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Excelente corrección de tesis. Rápida, profesional y con explicaciones
+                            de cada cambio."</p>
+                        <div class="review-author">
+                            <span class="author-name">Elena G.</span>
+                            <span class="author-service">Traducción</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"El curso grabado me salvó la vida. Pude estudiar a mi ritmo entre turnos
+                            de trabajo."</p>
+                        <div class="review-author">
+                            <span class="author-name">Javier S.</span>
+                            <span class="author-service">Curso Online</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Atención personalizada real. Andrea adapta cada clase a mis necesidades
+                            de la semana."</p>
+                        <div class="review-author">
+                            <span class="author-name">Lucía F.</span>
+                            <span class="author-service">Clases 1 a 1</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"En 3 meses avancé más que en 2 años de instituto tradicional. Totalmente
+                            recomendado."</p>
+                        <div class="review-author">
+                            <span class="author-name">Diego H.</span>
+                            <span class="author-service">Intensivo</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Metodología muy humana y adaptativa. Entiende perfectamente mis
+                            bloqueos."</p>
+                        <div class="review-author">
+                            <span class="author-name">Marta V.</span>
+                            <span class="author-service">Coaching</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Preparación para Cambridge C1 exitosa. Los simulacros fueron idénticos
+                            al examen real."</p>
+                        <div class="review-author">
+                            <span class="author-name">Roberto L.</span>
+                            <span class="author-service">Cambridge C1</span>
+                        </div>
+                    </div>
+
+                    <!-- DUPLICATE FOR INFINITE LOOP EFFECT (First 5 cards) -->
+                    <div class="review-card">
+                        <p class="review-text">"La preparación para el IELTS fue impecable. Logré el puntaje que
+                            necesitaba para mi maestría."</p>
+                        <div class="review-author">
+                            <span class="author-name">Sofía R.</span>
+                            <span class="author-service">IELTS Prep</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Romper la barrera del miedo al hablar fue clave. Ahora lidero reuniones
+                            en inglés sin dudar."</p>
+                        <div class="review-author">
+                            <span class="author-name">Carlos M.</span>
+                            <span class="author-service">Business English</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Material didáctico muy claro y directo. Las guías de gramática son mi
+                            referencia diaria."</p>
+                        <div class="review-author">
+                            <span class="author-name">Ana P.</span>
+                            <span class="author-service">Recursos</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Mis hijos adoran sus clases. Aprenden jugando y han mejorado muchísimo
+                            en el colegio."</p>
+                        <div class="review-author">
+                            <span class="author-name">Familia T.</span>
+                            <span class="author-service">Niños</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Excelente corrección de tesis. Rápida, profesional y con explicaciones
+                            de cada cambio."</p>
+                        <div class="review-author">
+                            <span class="author-name">Elena G.</span>
+                            <span class="author-service">Traducción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking/Talk Section (Creative Layout) -->
+        <section id="booking" class="section booking">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-content">
+                        <span class="booking-subtitle">Da el siguiente paso</span>
+                        <h2 class="booking-title">¿Hablamos de tus objetivos?</h2>
+                        <p class="booking-text">
+                            A veces, una conversación de 15 minutos aclara más que horas de búsqueda.
+                            Reserva una charla corta conmigo para conocer tu nivel, tus metas y
+                            descubrir cuál es el plan perfecto para ti. Sin compromisos.
+                        </p>
+                        <a href="https://calendar.app.google/f21XEd3zHBQHLmLMA" target="_blank" class="btn-primary">
+                            Agendar Charla
+                        </a>
+                    </div>
+                    <div class="booking-image-container">
+                        <div class="image-frame-back"></div>
+                        <img src="img/hablemos/profereserva.jpeg" alt="Andrea Martinez - Reservar Charla"
+                            class="booking-img">
+                        <div class="image-frame-front"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <h2 class="section-title">Hablemos</h2>
+                    <p>La primera clase de diagnóstico es gratuita.</p>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="¿Cuál es tu objetivo con el inglés?" rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Andrea Martinez English. All rights reserved.</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;"><a href="privacidad.html"
+                style="color: inherit; text-decoration: underline;">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Floating Social Sidebar -->
+    <div class="floating-social-sidebar">
+        <a href="https://wa.me/50688888888" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                stroke="none">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+        </a>
+        <a href="tel:+50688888888" class="social-icon phone" title="Llamar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69633d7c987b03197cb20051/1jelqgcbd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- Developer Watermark -->
+    <a href="https://nextwebcr.com" target="_blank" class="developer-badge">
+        <div class="dev-logo-wrapper">
+            <img src="img/logo.png" alt="NextWeb CR Logo" class="dev-logo">
+        </div>
+        <span class="dev-text">Desarrollado por <strong>NextWeb CR</strong></span>
+    </a>
+
+    <script src="js/anti-inspect.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
